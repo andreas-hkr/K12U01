@@ -22,7 +22,9 @@ public class Main {
             for (int i=0; i < nbrTests; i++) {
                 grades[nbrStudents][i] = fileIn.nextInt();
             }
-            fileIn.nextLine();
+            if (fileIn.hasNextLine()) {
+                fileIn.nextLine();
+            }
             nbrStudents++;
         }
 
